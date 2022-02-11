@@ -21,6 +21,20 @@ main{
     font-weight:200;
 }
 
+.hello{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.helloword{
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 10vh;
+    font-weight: 300;
+}
+
 .projects{
     display: grid;
     grid-template-columns: repeat(4,1fr);
