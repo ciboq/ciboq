@@ -21,6 +21,23 @@ main{
     font-weight:200;
 }
 
+.hello{
+    display: grid;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.hello>p:nth-child(1){
+    grid-column: 1/2;
+}
+
+.hello>p:nth-child(2){
+    grid-column: 2;
+    grid-row: 2;
+    align-self: right;
+}
 
 .projects{
     display: grid;
