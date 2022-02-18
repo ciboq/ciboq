@@ -21,12 +21,16 @@ main{
     font-weight:200;
 }
 
+
 .hello{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 200px;
     padding-left: 10vw;
     padding-right: 10vw;
+    display: flex;
+}
+
+.background{
+    background-color: antiquewhite;
+    width: 80vw;
 }
 
 .hello div{
@@ -34,6 +38,7 @@ main{
 }
 
 .helloword{
+    display: flex;
     font-family:'Nunito Sans', sans-serif;
     font-size: 100%;
     font-weight: 400;
@@ -41,14 +46,8 @@ main{
     align-self: flex-start
 }
 
-.huanying{
-    font-family:'Nunito Sans', sans-serif;
-    font-size: 100%;
-    font-weight: 400;
-    line-height: 1em;
-    grid-column: 4/5;
+.helloword>div:nth-child(2){
     align-self: flex-end;
-    justify-self: end;
 }
 
 .projects{
