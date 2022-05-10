@@ -52,18 +52,21 @@ main{
     display:flex;
     transition: transform 0.2s;
     color: white;
+    background-color: rgba(0, 0, 0, 0.253);
+    width:17.8vw;
     grid-column: 1/2;
-    margin-left: 10;
+    margin-left: 0;
     position: relative;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-items: center;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 30px;
     font-weight:900;
 }
 
 .project1_word>a{
-    padding-left: 20px;
+    padding-left: 10px;
+    z-index: 3;
 }
 
 a, a:link, a:visited{
@@ -72,6 +75,7 @@ a, a:link, a:visited{
 
 a:hover{
     color: lightgreen;
+    z-index: 3;
 }
 
 .project1_bg:hover, .project1_word:hover{
@@ -80,10 +84,27 @@ a:hover{
 
 .project1_bg{
     transition: transform 0.2s;
+    opacity: 80%;
+    background-color: black;
     grid-column: 1/2;
     position: absolute;
     width: 245px;
     height: 600px;
+}
+
+.cover{
+    transition: transform 0.2s;
+    opacity: 50%;
+    background-color: rgba(0, 0, 0, 0.432);
+    z-index: 2;
+    grid-column: 1/2;
+    position: absolute;
+    width: 245px;
+    height: 600px;
+}
+
+.cover:hover{
+    transform: scale(1.05);
 }
 
 .project2_bg{
